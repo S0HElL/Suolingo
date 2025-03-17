@@ -1,0 +1,40 @@
+body {
+  background: white;
+  font-family: Vazir , sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.hearts {
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 150px 150px; /* Two columns */
+  gap: 10px;
+}
+
+.word {
+  background: #F0F0F0; /* Slightly gray */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.word.correct {
+  background: #C8E6C9; /* Green */
+}
+
+.word.incorrect {
+  background: #FFCDD2; /* Red */
+}
